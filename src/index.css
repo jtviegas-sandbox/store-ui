@@ -29,7 +29,6 @@ footer {
   bottom: 0;
   left: 0;
   padding: 3rem;
-
 }
 
 .small-part-widget {
@@ -40,4 +39,8 @@ footer {
   padding: 2.5rem 2.5rem;
   color: #999;
   border-top: .5rem solid #e5e5e5;
+}
+
+.back-to-top {
+  cursor: pointer;
 }

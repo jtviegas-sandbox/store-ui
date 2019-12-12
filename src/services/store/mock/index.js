@@ -83,7 +83,7 @@ class MockDataStore {
                     i2 = n;
                 }
                 else {
-                    i1 = Math.floor(n/pageSize) * pageSize;
+                    i1 = Math.floor(n/pageSize) * pageSize + 1;
                     i2 = i1 + ( n % pageSize );
                 }
             }

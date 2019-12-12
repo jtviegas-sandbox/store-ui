@@ -5,11 +5,10 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="store ui"
-    />
+    <meta name="description" content="store ui" />
     <link rel="apple-touch-icon" href="logo192.png" />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--<script src="../node_modules/jquery/dist/jquery.min.js"></script>-->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -39,5 +38,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $(document).ready(function(){
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+          $('body,html').animate({
+            scrollTop: 0
+          }, 800);
+          return false;
+        });
+      });
+    </script>
+
   </body>
 </html>

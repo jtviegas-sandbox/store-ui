@@ -66,7 +66,7 @@ class App extends React.Component {
 
 		return (
 			<HashRouter>
-				<section className="container-fluid">x
+				<section className="container-fluid">
 					<Header />
 					<section className="container">
 						<Switch>
