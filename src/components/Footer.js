@@ -12,7 +12,6 @@ class Footer extends React.Component {
 				, part: null
 			}
 			, configuration: props.configuration
-
 		}
 	}
 	
@@ -27,11 +26,7 @@ class Footer extends React.Component {
 				<div className="container">
 				<hr className="featurette-divider" />
 					<p className="float-right">
-						{/*<a href="/">Back to top</a>*/}
-						{/*role="button"
-						title="Click to return on the top page" data-toggle="tooltip" data-placement="left" */}
-						<a id="back-to-top" className="back-to-top" >back to top</a>
-
+						<button id="back-to-top" className="btn btn-link">back to top</button>
 					</p>
 					<p>© 2018 split4ever</p>
 				</div>

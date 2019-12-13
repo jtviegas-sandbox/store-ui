@@ -10,6 +10,16 @@ const configuration =  {
     }
     , extendedPathSuffix : '/*'
     , itemsPositions : ['first', 'previous', 'next', 'last']
-
+    , branding : {
+        name: 'split4ever'
+        , address: {
+            line1: "1355 Market St, Suite 900"
+            , line2: "n.20 dto"
+            , postalcode: "1120-001 SBernardo"
+            , country: "Portugal"
+        }
+        , phone: "(123) 456-7890"
+        , email: "main@split4ever.com"
+    }
 };
 export default configuration;

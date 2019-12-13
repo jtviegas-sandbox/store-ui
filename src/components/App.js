@@ -41,7 +41,7 @@ class App extends React.Component {
 		const { items } = this.state;
 		const { item } = this.state;
 		const props = this.props;
-
+		const branding = configuration.branding;
 		const onIntent = function(func){
 
 			let f = (props) => {
@@ -67,7 +67,7 @@ class App extends React.Component {
 		return (
 			<HashRouter>
 				<section className="container-fluid">
-					<Header />
+					<Header branding={branding} />
 					<section className="container">
 						<Switch>
 							<Route exact path="/items/:id" render={(props) => <Item {...props} item={item} onIntent={onIntent} />} />
@@ -75,7 +75,7 @@ class App extends React.Component {
 							<Redirect from="/" to="/items" /> } />
 						</Switch>
 					</section>
-					<Footer />
+					<Footer branding={branding} />
 				</section>
 			</HashRouter>
 		)
