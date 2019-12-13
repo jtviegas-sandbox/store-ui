@@ -44,3 +44,7 @@ footer {
 .back-to-top {
   cursor: pointer;
 }
+
+.borderless {
+  border: 1px;
+}

@@ -36,12 +36,4 @@ class Footer extends React.Component {
 };
 
 
-Footer.propTypes = {
-		state: PropTypes.object.isRequired
-	}
-
-Footer.defaultProps = {
-		state: {}
-	}
-
 export default Footer;
