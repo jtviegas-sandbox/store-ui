@@ -14,17 +14,6 @@ class CollapsibleHeader extends React.Component {
 		this.state = {};
 	}
 
-	componentDidMount(){
-		Logger.of('store-ui.CollapsibleHeader.componentDidMount').trace('in', 'this.props:', this.props, 'this.state:', this.state);
-		Logger.of('store-ui.CollapsibleHeader.componentDidMount').trace('out');
-	}
-
-	static getDerivedStateFromProps(props, state){
-		Logger.of('store-ui.CollapsibleHeader.getDerivedStateFromProps').trace('in', 'props:', props, 'state:', state);
-		Logger.of('store-ui.CollapsibleHeader.getDerivedStateFromProps').trace('out');
-		return state;
-	}
-
 	render(){
 		Logger.of('store-ui.CollapsibleHeader.render').trace('in', 'this.props:', this.props, 'this.state:', this.state);
 		const configuration = this.props.configuration;

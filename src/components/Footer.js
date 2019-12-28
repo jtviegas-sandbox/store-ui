@@ -15,10 +15,6 @@ class Footer extends React.Component {
 		}
 	}
 	
-	UNSAFE_componentWillMount() {
-
-	}
-	
 	render(){
 		const { configuration, selection } = this.state;
 		return (

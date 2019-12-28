@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Truncate from 'react-truncate';
  
 class ReadMore extends Component {
@@ -68,11 +67,6 @@ ReadMore.defaultProps = {
     more: 'more',
     less: 'less'
 };
- 
-ReadMore.propTypes = {
-    children: PropTypes.node.isRequired,
-    text: PropTypes.node,
-    lines: PropTypes.number
-};
+
  
 export default ReadMore;

@@ -10,11 +10,6 @@ class Authentication extends React.Component {
 		Logger.of('store-ui.Authentication.constructor').trace('out');
 	}
 
-	componentDidMount(){
-		Logger.of('store-ui.Authentication.componentDidMount').trace('in', 'this.props:', this.props);
-		Logger.of('store-ui.Authentication.componentDidMount').trace('out');
-	}
-
 	static getDerivedStateFromProps(props, state){
 		Logger.of('store-ui.Authentication.getDerivedStateFromProps').trace('in', 'props:', props);
 

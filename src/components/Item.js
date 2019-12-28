@@ -12,11 +12,6 @@ class Item extends React.Component {
 		Logger.of('store-ui.Item.constructor').trace('out');
 	}
 
-	componentDidMount(){
-		Logger.of('store-ui.Item.componentDidMount').trace('in', 'this.props:', this.props, 'this.state:', this.state);
-		Logger.of('store-ui.Item.componentDidMount').trace('out');
-	}
-
 	static getDerivedStateFromProps(props, state){
 		Logger.of('store-ui.Item.getDerivedStateFromProps').trace('in', 'props:', props, 'state:', state);
 		let path = props.location.pathname + props.location.search;

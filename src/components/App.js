@@ -36,17 +36,6 @@ class App extends React.Component {
 		Logger.of('store-ui.App.constructor').trace('out');
 	}
 
-	componentDidMount(){
-		Logger.of('store-ui.App.componentDidMount').trace('in', 'this.props.location:', this.props.location, 'this.state:', this.state);
-		Logger.of('store-ui.App.componentDidMount').trace('out');
-	}
-
-	static getDerivedStateFromProps(props, state){
-		Logger.of('store-ui.App.getDerivedStateFromProps').trace('in', 'props.location:', props.location, 'state:', state);
-		Logger.of('store-ui.App.getDerivedStateFromProps').trace('out');
-		return state;
-	}
-
 	//localStorage.setItem('store-ui', 'INFO');
 	render(){
 		Logger.of('store-ui.App.render').trace('in', 'props:', this.props, 'state:', this.state);

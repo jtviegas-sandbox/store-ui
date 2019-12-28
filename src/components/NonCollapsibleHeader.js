@@ -14,17 +14,6 @@ class NonCollapsibleHeader extends React.Component {
 		Logger.of('store-ui.NonCollapsibleHeader.constructor').trace('out');
 	}
 
-	componentDidMount(){
-		Logger.of('store-ui.NonCollapsibleHeader.componentDidMount').trace('in', 'this.props:', this.props);
-		Logger.of('store-ui.NonCollapsibleHeader.componentDidMount').trace('out');
-	}
-
-	static getDerivedStateFromProps(props, state){
-		Logger.of('store-ui.NonCollapsibleHeader.getDerivedStateFromProps').trace('in', 'props:', props);
-		Logger.of('store-ui.NonCollapsibleHeader.getDerivedStateFromProps').trace('out');
-		return state;
-	}
-
 	render(){
 		Logger.of('store-ui.NonCollapsibleHeader.render').trace('in', 'this.props:', this.props);
 		const props = this.props;
