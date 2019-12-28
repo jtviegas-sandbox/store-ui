@@ -5,7 +5,7 @@ class RestDataStore {
 
 	constructor(props) {
         if( !props.defaultPageSize )
-            throw new Error('!!! no defaultPageSize configuration !!!');
+            throw new Error('!!! no defaultPageSize app !!!');
         this.url = props.url;
 	}
 

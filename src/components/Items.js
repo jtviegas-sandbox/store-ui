@@ -2,7 +2,6 @@
 import React from 'react';
 import ItemSmallWidget from './ItemSmallWidget';
 import Pagination from './Pagination';
-import { withRouter } from 'react-router';
 import { Logger } from 'react-logger-lib';
 
 class Items extends React.Component {
@@ -16,14 +15,15 @@ class Items extends React.Component {
 
 	static getDerivedStateFromProps(props, state) {
 		Logger.of('store-ui.Items.getDerivedStateFromProps').trace('[IN]', 'props:', props, 'state:', state);
+
 		let path = props.location.pathname + props.location.search;
 		if( path !== state.path ){
 			Logger.of('store-ui.Items.getDerivedStateFromProps').info('location changed, going to ask for reload');
 			state.path = path;
-			props.onIntent(props);
+			props.intents.path( { match: props.match, location: props.location} );
 		}
 		else {
-			Logger.of('store-ui.Items.getDerivedStateFromProps').info('same location, going to assign items to state');
+			Logger.of('store-ui.Items.getDerivedStateFromProps').info('location set, going to assign items to state');
 			state.items = props.items;
 		}
 			
@@ -31,10 +31,6 @@ class Items extends React.Component {
 		return state;
 	}
 
-	componentDidMount() {
-		Logger.of('store-ui.Items.componentDidMount').trace('[IN]', 'this.props:', this.props, 'this.state:', this.state);
-		Logger.of('store-ui.Items.componentDidMount').trace('[OUT]');
-	}
 
 	render(){
 		Logger.of('store-ui.Items.render').trace('[IN]', 'this.props:', this.props, 'this.state:', this.state);
@@ -59,4 +55,4 @@ class Items extends React.Component {
 };
 
 
-export default withRouter( Items );
+export default Items ;

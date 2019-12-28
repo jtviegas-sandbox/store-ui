@@ -6,7 +6,7 @@ import ReadMore from './ReadMore';
 
 
 
-const ItemSmallWidget = ({item, history, path}) =>
+const ItemSmallWidget = ({item, path}) =>
 	<div className="card small-part-widget">
 		<img className="card-img-top" src={"data:image/" + item.images[0].type + ";base64," + item.images[0].data} alt={item.images[0].name} />
 		<div className="card-body">

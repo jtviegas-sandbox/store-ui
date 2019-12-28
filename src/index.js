@@ -7,6 +7,6 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js';
 import './index.css';
 
 import App from './components/App';
-
-ReactDOM.render( <App/> , document.getElementById('root'));
+console.log("XXXXXXXXXXXXXXXXXXXXXXXX")
+ReactDOM.render( <App /> , document.getElementById('root'));
 

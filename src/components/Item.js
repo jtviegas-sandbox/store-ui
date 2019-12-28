@@ -23,7 +23,7 @@ class Item extends React.Component {
 		if( path !== state.path ){
 			Logger.of('store-ui.Item.getDerivedStateFromProps').info('location changed, going to ask for reload');
 			state.path = path;
-			props.onIntent(props);
+			props.intents.path( { match: props.match, location: props.location} );
 		}
 		else {
 			Logger.of('store-ui.Item.getDerivedStateFromProps').info('same location, going to assign same item to state');

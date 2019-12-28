@@ -1,6 +1,6 @@
 import { Logger } from 'react-logger-lib';
 import qs from "query-string";
-import configuration from './../../configuration'
+import app from '../../config/app'
 
 class ItemsStrategy {
 
@@ -26,7 +26,7 @@ class ItemsStrategy {
         if( query.id )
             id = parseInt(query.id);
 
-        this.dataService.getItems({fromId: id, pageSize: configuration.pageSize}, (e,o) => {
+        this.dataService.getItems({fromId: id, pageSize: app.pageSize}, (e, o) => {
             if(e)
                 callback(e);
             else

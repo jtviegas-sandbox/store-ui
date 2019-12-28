@@ -26,7 +26,7 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf configuration
+# node-waf app
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
@@ -83,3 +83,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .idea
+log
