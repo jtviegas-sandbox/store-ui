@@ -5,8 +5,8 @@ const app =  {
     }
     , dataStore: {
         mode: 'mock'
-        , url: "https://btvc6sgs9a.execute-api.eu-west-1.amazonaws.com/Prod"
-        , collections: {'items': 'testapp-dev-items' }
+        , url: "https://5vg511g9v9.execute-api.eu-west-1.amazonaws.com/dev/entities/split4ever"
+        , collections: {'items': 'split4ever-dev-items' }
     }
     , extendedPathSuffix : '/*'
     , itemsPositions : ['first', 'previous', 'next', 'last']
@@ -24,4 +24,5 @@ const app =  {
     }
     , headerImageFile: "assets/branding/header.png"
 };
+
 export default app;
